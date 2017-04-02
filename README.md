@@ -1,15 +1,15 @@
-## AutoPBN v2 ##
+# **AutoPBN v2**
 **Rewritten code, comes with ARM and x64 builds!**
 ![AutoPBN v2 preview](http://i.imgur.com/O43x1qz.png)
 #### Current Versions:
 Client/Loader - **1.06**  
 Main Code - **2.00**
 
-# 1. What is AutoPBN?
+### 1. What is AutoPBN?
 It's linux application that will control and watch over PokeBotNinja, making botting times more human-like.  
 Thanks to that you can leave bots running on your favorite VPS or even raspberry pi, without necessity to check on it every few hours if there was an error/crash or not, and without fear of permban. 
 
-# 2. Functions and features:
+### 2. Functions and features:
 * AutoStop PBN after random period of time (customizable in config file, function can be disabled for risky infinite botting),
 * AutoStart PBN after random period of time (customizable in config file),
 * AutoRestart PBN in case of: failed login, api/hash error (customizable in config file) or in case of disconnect or crash,
@@ -21,12 +21,12 @@ Thanks to that you can leave bots running on your favorite VPS or even raspberry
 * Automatically adjust loaded json to fit AutoPBN requirements (enable AutoLogin and AutoStart and disable in-built autokill function),
 * additional paremeters support (listed somewhere below),
 
-# 3. Requirements: 
+### 3. Requirements: 
 * Linux OS (tested on Ubuntu 16.04 and Raspbian Jessie) on x64 or ARM device,
 * Pokebot.ninja (for multiAcc support use AT LEAST v96) with at least Gold benefits, 
 * Already fully configured .json file (json configuration through AutoPBN will be added much later),
 
-# 4. Installation and how to use it:
+### 4. Installation and how to use it:
 1. Download AutoPBN for ARM or x64 from [GitHub here](https://github.com/TheRadziu/AutoPBN-v2/releases/latest)
 2. Extract its files to PokeBotNinja folder
 3. Edit *AutoPBN.config* file (for linux: nano/vim | for windows: Notepad++ recommended) and set values as you like:
@@ -42,7 +42,7 @@ Thanks to that you can leave bots running on your favorite VPS or even raspberry
 5. Everything is now ready! From now on you can run PBN through AutoPBN via *./AutoPBN* and close it with CTRL + C combo.
 6. *(optional)* In case of "Permission denied" error after issuing *./AutoPBN* command use *sudo chmod +x AutoPBN*
 
-# 5. Startup parameters:
+### 5. Startup parameters:
 Example: *./AutoPBN -help*  
 * config - loads specified .json file [example: *-config MyOtherPogoAccount.json*], can be used with *-skip* parameter,   
 * help - displays list of currently available startup parameters with their brief description,  
@@ -52,8 +52,8 @@ Example: *./AutoPBN -help*
 * ping - Pong!  
 * pong - Ping?  
 
-# 6. Changelog
-[to be translated into english soon, for now enjoy it in beatiful Polish language :F]  
+### 6. Changelog
+[to be translated into english soon, for now enjoy it in beatiful Polish language :F]
 ```
 02.04.17 - v2.00
 -Przepisana wiekszość kodu, teraz AutoPBN korzysta z binarek a nie plików bash.
@@ -95,6 +95,6 @@ Example: *./AutoPBN -help*
 -Pierwsze publiczne wydanie
 ```
 
-# 7. Todo list:
+### 7. Todo list:
 - [ ] Add RAM limit for single PokeBotNinja instance (customizable via config file)
 - [ ] Add json configuration via AutoPBN, so running PokeBotNinja at least once will no longer be required. 
